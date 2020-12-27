@@ -1,0 +1,9 @@
+1. fork program
+2. vfork program
+3. armstrong numbers below 1000 program
+4. tcp day time client
+5. ipvt6 day time client
+6. day time server
+7. Program to find out the byte order(little/big endian) of the system.
+8. Extension of inet_pton() implementation for IPv6
+9. Extension of inet_ntop() implementation for IPv6

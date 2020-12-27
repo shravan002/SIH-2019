@@ -1,0 +1,43 @@
+import pymysql
+import RPi.GPIO as GPIO
+import time
+import csv
+
+def motor_control(upto_wl,upto_sm):
+    GPIO.setmode(GPIO.BCM)
+    pinlist = 17
+    GPIO.setup(pinlist,GPIO.OUT)
+    GPIO.output(pinlist,GPIO.HIGH)
+    sm_thershold = upto_sm
+    wl_thershold = upto_wl
+
+    
+mySQLconnection = pymysql.connect(host='localhost',database='smartlab',user='pi',password='lunatics@92',unix_socket='/var/run/mysqld/mysqld.sock')
+    sql_select_Query = "select * from sensor_values order by timestamp desc "
+    cursor = mySQLconnection .cursor()
+    cursor.execute(sql_select_Query)
+    records = cursor.fetchone()
+    print("    sm,    wl")
+    print(upto_sm,upto_wl)
+    print(records)
+    #if (float(records[1]) >= sm_thershold and float(records[2]) <= wl_thershold):
+
+
+    SleepTimes =2
+
+    # main loop
+
+    while True:
+        GPIO.output(pinList, GPIO.LOW)
+        time.sleep(SleepTimes)
+        GPIO.output(pinList, GPIO.HIGH)
+        time.sleep(SleepTimes);
+    mySQLconnection.commit()
+    cursor.close()
+    mySQLconnection.close()
+
+    print("clean up toh ho gya")
+    GPIO.cleanup(pinlist)
+    print("done")
+
+motor_control(123,555)

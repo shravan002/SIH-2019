@@ -1,0 +1,66 @@
+                                   AgroTech squad
+
+Problem Statement: To have maximum yield, there is a need for optimum irrigation. 
+The need for water depends on various parameters like soil moisture, water level, 
+weather condition etc. Currently, irrigation happens based on human inspection and 
+does not take into account various parameters which make it optimal. 
+
+The aforementioned parameters can be measured and well used in optimizing water delivery 
+as well as biological macro-nutrients in some form. Using historical/agricultural data 
+helps further in providing real-time irrigation requirement by ensuring optimal 
+usage of water to get the improved yield.
+
+Objectives:
+--> To improve the yield by optimizing the usage of water in the fields 
+--> To recommend the macro-nutrients requirement to the farmer by real-time monitoring 
+of soil parameters
+
+Introduction:
+
+Sensor Data Collection: Sensor Module will sense soil moisture, Macro nutrients(NPK) 
+at regular  intervals.
+
+Communication: The data collected by sensor module will be transmitted wirelessly to micro-
+controller(Raspberry Pi) through ESP8266 Wi-fi module.
+
+Data Analytics :Analysis will be done on the collected data from the senor module and
+weather data.
+
+Action : Farmer will be notified and the system will control water delivery automatically.
+Optical sensors is used to measure the macro -nutrients (N,P,K values).
+
+*Microprocessor (raspberry pi) processes the collected data from the sensor module.
+
+*Machine learning model will be used to analyze the data from the sensor module and Neural Network
+is applied to generate recommendations for the optimized yield
+
+*Internet connectivity will be used for communication with the cloud server.
+
+
+
+Proposed System:
+-Data Collection (Real Time Monitoring) : 
+-Data Transmission:
+-Data Analytics:
+-Data Presentation:
+
+Methodology
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
